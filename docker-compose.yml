@@ -1,0 +1,17 @@
+version: '2'
+services:
+  helix-p4d:
+    build: .
+    image: mmorita44/helix-p4d:latest
+    ports:
+      - 1666:1666
+    volumes:
+      - data-helix-p4d-servers:/opt/perforce/servers
+      - data-helix-p4d-triggers:/opt/perforce/triggers
+
+volumes:
+  data-helix-p4d-servers:
+    driver: local
+
+  data-helix-p4d-triggers:
+    driver: local
