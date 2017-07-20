@@ -8,10 +8,14 @@ services:
     volumes:
       - data-helix-p4d-servers:/opt/perforce/servers
       - data-helix-p4d-triggers:/opt/perforce/triggers
+      - data-helix-p4d-config:/etc/perforce
 
 volumes:
   data-helix-p4d-servers:
     driver: local
 
   data-helix-p4d-triggers:
+    driver: local
+
+  data-helix-p4d-config:
     driver: local

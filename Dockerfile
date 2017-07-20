@@ -25,9 +25,10 @@ RUN apt-get update && \
 # Expose default p4d connector port
 EXPOSE 1666 
 
-# Set volume mount point for server roots and triggers
+# Set volume mount point for server roots and triggers and configuration
 VOLUME /opt/perforce/servers
 VOLUME /opt/perforce/triggers
+VOLUME /etc/perforce
 
 # Add a startup file
 ADD ./run.sh /
