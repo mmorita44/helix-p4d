@@ -5,7 +5,7 @@ MAINTAINER Masato Morita <m.morita44@hotmail.com>
 ADD https://package.perforce.com/perforce.pubkey /tmp/perforce.pubkey
 
 # Define valiables
-ARG HELIX_VERSION=2017.1-1511774~xenial
+ARG HELIX_VERSION=2017.1-1534792~xenial
 
 # Set environment variables
 ENV SERVER_NAME perforce 
